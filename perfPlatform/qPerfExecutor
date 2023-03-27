@@ -12,7 +12,7 @@ pipeline {
             JOBNAME = "tqeperfengqcenterper"
 //   Project On-board TASK 2::
 //          Provide JMeter script name you want to run here. Don't add .jmx extension
-            scriptName = "Qcenter_Performace"
+            scriptName = "Qcenter_Performance"
     }
 
     stages {
