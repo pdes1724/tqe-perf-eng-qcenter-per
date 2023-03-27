@@ -13038,12 +13038,12 @@
             </elementProp>
             <elementProp name="influxdbUrl" elementType="Argument">
               <stringProp name="Argument.name">influxdbUrl</stringProp>
-              <stringProp name="Argument.value">http://host_to_change:8086/write?db=jmeter</stringProp>
+              <stringProp name="Argument.value">https://perfplatform.cloud.sysco.net/influx/api/v2/write?org=qperf&amp;bucket=prod</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="application" elementType="Argument">
               <stringProp name="Argument.name">application</stringProp>
-              <stringProp name="Argument.value">application name</stringProp>
+              <stringProp name="Argument.value">QcenterPerfroamce</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="measurement" elementType="Argument">
@@ -13074,6 +13074,11 @@
             <elementProp name="eventTags" elementType="Argument">
               <stringProp name="Argument.name">eventTags</stringProp>
               <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="influxdbToken" elementType="Argument">
+              <stringProp name="Argument.name">influxdbToken</stringProp>
+              <stringProp name="Argument.value">vcgrjECCMCjncIPpUThU6ohRoN_2wLo_ynZwGBILfG7QbdE3NoQaYQqzTHk6LkFVEqZ2CTsL8ik2t9R-9bYTOw==</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
