@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+  labels:
+    jmeter-master-label: jmeter-master
+    jenkins-slave-label: jenkins-slave
+spec:
+  serviceAccountName: jenkins-release
+  imagePullSecrets:
+    - name: dockerregcred
+  containers:
+    - name: distributed-jmeter-master
+      image: maven:alpine
+      command:
+        - cat
+      tty: true
+      resources:
+        requests:
+          memory: 1920Mi
+          cpu: 500m
+        limits:
+          memory: 1920Mi
+          cpu: 500m
+      volumeMounts:
+        - mountPath: /root/.m2
+          name: m2-volume
+    - name: kubehelm
+      image: dtzar/helm-kubectl:3.11.1
+      command:
+        - cat
+      tty: true
+      resources:
+        requests:
+          memory: 128Mi
+          cpu: 100m
+        limits:
+          memory: 128Mi
+          cpu: 100m
+      volumeMounts:
+        - mountPath: /root/.cache/helm
+          name: helm3-cache
+        - mountPath: /root/.config/helm
+          name: helm3-config
+        - mountPath: /root/.local/share/helm
+          name: helm3-data
+        - mountPath: /opt/results
+          name: file-server-data
+  volumes:
+    - name: m2-volume
+      persistentVolumeClaim:
+        claimName: maven-efs-pv-claim
+    - name: helm3-cache
+      persistentVolumeClaim:
+        claimName: helm3-cache-efs-pv-claim
+    - name: helm3-config
+      persistentVolumeClaim:
+        claimName: helm3-config-efs-pv-claim
+    - name: helm3-data
+      persistentVolumeClaim:
+        claimName: helm3-data-efs-pv-claim
+    - name: file-server-data
+      persistentVolumeClaim:
+        claimName: file-server-efs-pv-claim
