@@ -172,13 +172,13 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Login_&amp;_Navigate_Capability_Report_Tread_Group" enabled="false">
+      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Login_&amp;_Navigate_Capability_Report_Tread_Group" enabled="true">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">1</stringProp>
-        <stringProp name="RampUp">1</stringProp>
-        <stringProp name="Steps">1</stringProp>
-        <stringProp name="Hold">1</stringProp>
+        <stringProp name="TargetLevel">${TragetConcurrencyTwo}</stringProp>
+        <stringProp name="RampUp">${RampUpTime}</stringProp>
+        <stringProp name="Steps">${RampUPstepscount}</stringProp>
+        <stringProp name="Hold">${HoldTargetTime}</stringProp>
         <stringProp name="LogFilename"></stringProp>
         <stringProp name="Iterations"></stringProp>
         <stringProp name="Unit">M</stringProp>
@@ -5376,10 +5376,10 @@
       <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Navaigate_Ex_Dashbaord_Tread_Group" enabled="false">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">1</stringProp>
-        <stringProp name="RampUp">1</stringProp>
-        <stringProp name="Steps">1</stringProp>
-        <stringProp name="Hold">1</stringProp>
+        <stringProp name="TargetLevel">${TragetConcurrencyTwo}</stringProp>
+        <stringProp name="RampUp">${RampUpTime}</stringProp>
+        <stringProp name="Steps">${RampUPstepscount}</stringProp>
+        <stringProp name="Hold">${HoldTargetTime}</stringProp>
         <stringProp name="LogFilename"></stringProp>
         <stringProp name="Iterations"></stringProp>
         <stringProp name="Unit">M</stringProp>
@@ -16177,10 +16177,10 @@
       <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Naviagte_Qlytics_Dashboard_Tread_Group" enabled="false">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">1</stringProp>
-        <stringProp name="RampUp">1</stringProp>
-        <stringProp name="Steps">1</stringProp>
-        <stringProp name="Hold">1</stringProp>
+        <stringProp name="TargetLevel">${TragetConcurrencyTwo}</stringProp>
+        <stringProp name="RampUp">${RampUpTime}</stringProp>
+        <stringProp name="Steps">${RampUPstepscount}</stringProp>
+        <stringProp name="Hold">${HoldTargetTime}</stringProp>
         <stringProp name="LogFilename"></stringProp>
         <stringProp name="Iterations"></stringProp>
         <stringProp name="Unit">M</stringProp>
@@ -24792,13 +24792,13 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Qlytics_Test_Execution_History_Tread_Group" enabled="true">
+      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Qlytics_Test_Execution_History_Tread_Group" enabled="false">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">1</stringProp>
-        <stringProp name="RampUp">1</stringProp>
-        <stringProp name="Steps">1</stringProp>
-        <stringProp name="Hold">1</stringProp>
+        <stringProp name="TargetLevel">${TragetConcurrencyTwo}</stringProp>
+        <stringProp name="RampUp">${RampUpTime}</stringProp>
+        <stringProp name="Steps">${RampUPstepscount}</stringProp>
+        <stringProp name="Hold">${HoldTargetTime}</stringProp>
         <stringProp name="LogFilename"></stringProp>
         <stringProp name="Iterations"></stringProp>
         <stringProp name="Unit">M</stringProp>
@@ -33774,10 +33774,10 @@
       <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Qcenter_Capability_Report_Edit_Tread_Group" enabled="false">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">1</stringProp>
-        <stringProp name="RampUp">1</stringProp>
-        <stringProp name="Steps">1</stringProp>
-        <stringProp name="Hold">1</stringProp>
+        <stringProp name="TargetLevel">${TragetConcurrencyTwo}</stringProp>
+        <stringProp name="RampUp">${RampUpTime}</stringProp>
+        <stringProp name="Steps">${RampUPstepscount}</stringProp>
+        <stringProp name="Hold">${HoldTargetTime}</stringProp>
         <stringProp name="LogFilename"></stringProp>
         <stringProp name="Iterations"></stringProp>
         <stringProp name="Unit">M</stringProp>
